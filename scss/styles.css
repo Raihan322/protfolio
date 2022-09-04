@@ -1,0 +1,1457 @@
+/**
+######### button section design in css mixin #########
+**/
+/**
+########## heading h2 design in css  ############
+**/
+/**top up button in html**/
+#button {
+  display: inline-block;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: '';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 40px;
+  color: #fff;
+}
+
+#button i {
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #46ff7d;
+}
+
+#button:active {
+  background-color: #37c54a;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.active {
+  background: red;
+  color: #fff !important;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.navigation-section {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  margin-bottom: 150px;
+  top: 0;
+  left: 0;
+}
+
+/** slider section design in css start**/
+.carousel {
+  margin-top: 50px;
+}
+
+.carousel .carousel-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  z-index: 10;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.carousel .carousel-controls .carousel-indicators {
+  position: relative;
+  margin: 0;
+}
+
+.carousel .carousel-controls .carousel-indicators li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 70px;
+  width: 60px;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.carousel .carousel-controls .carousel-indicators li:nth-child(1) {
+  background: url(../assets/slider1.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid #fff;
+}
+
+.carousel .carousel-controls .carousel-indicators li:nth-child(2) {
+  background: url(../assets/slider2.webp) no-repeat;
+  margin: 5px;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid #fff;
+}
+
+.carousel .carousel-controls .carousel-indicators li:nth-child(3) {
+  background: url(../assets/slider3.webp) no-repeat;
+  margin: 5px;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid #fff;
+}
+
+.carousel .carousel-controls .carousel-indicators .active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.carousel .ssslid1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../assets/slider1.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/slider1.jpeg);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+}
+
+.carousel .ssslid1 .text-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+  color: #fff;
+}
+
+.carousel .ssslid1 .text-section h2 {
+  -webkit-animation: fadeInLeft 2s ease forwards;
+          animation: fadeInLeft 2s ease forwards;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-100px);
+            transform: translate(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-100px);
+            transform: translate(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.carousel .ssslid1 .text-section p {
+  -webkit-animation: fadeInRight 2s ease forwards;
+          animation: fadeInRight 2s ease forwards;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(60px);
+            transform: translate(60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(60px);
+            transform: translate(60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.carousel .ssslid2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/slider2.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/slider2.webp);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+}
+
+.carousel .ssslid2 .text-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+  color: #fff;
+}
+
+.carousel .ssslid2 .text-section h2 {
+  -webkit-animation: fadeInLeft 2s ease forwards;
+          animation: fadeInLeft 2s ease forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-100px);
+            transform: translate(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.carousel .ssslid2 .text-section p {
+  -webkit-animation: fadeInRight 2s ease forwards;
+          animation: fadeInRight 2s ease forwards;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(60px);
+            transform: translate(60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.carousel .ssslid3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/slider3.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/slider3.webp);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 80vh;
+}
+
+.carousel .ssslid3 .text-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+  color: #fff;
+}
+
+.carousel .ssslid3 .text-section h2 {
+  -webkit-animation: fadeInLeft 2s ease forwards;
+          animation: fadeInLeft 2s ease forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-100px);
+            transform: translate(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.carousel .ssslid3 .text-section p {
+  -webkit-animation: fadeInRight 2s ease forwards;
+          animation: fadeInRight 2s ease forwards;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(60px);
+            transform: translate(60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.carousel .carousel-controls .carousel-control-prev {
+  background: #fff;
+  z-index: 99;
+  width: 60px;
+  height: 70px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -90px;
+  border-radius: 50%;
+}
+
+.carousel .carousel-controls .carousel-control-prev img {
+  width: 80%;
+}
+
+.carousel .carousel-controls .carousel-control-next {
+  background: #fff;
+  z-index: 99;
+  width: 60px;
+  height: 70px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -90px;
+  border-radius: 50%;
+}
+
+.carousel .carousel-controls .carousel-control-next img {
+  width: 80%;
+}
+
+/**
+################# room book section form design in css ####################
+**/
+.room-book-form {
+  margin-top: 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 62, 62, 0.9)), to(rgba(80, 62, 62, 0.9))), url(../assets/slider3.webp) no-repeat center;
+  background: linear-gradient(rgba(80, 62, 62, 0.9), rgba(80, 62, 62, 0.9)), url(../assets/slider3.webp) no-repeat center;
+  background-size: cover;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.room-book-form .row input {
+  display: block;
+  width: 100%;
+  border: 1px solid #000000;
+  background: transparent;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.room-book-form .row input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+.room-book-form .row input:-ms-input-placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+.room-book-form .row input::-ms-input-placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+.room-book-form .row input::placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+.room-book-form .row #selec {
+  width: 100%;
+  border: 1px solid #000000;
+  background: rgba(80, 62, 62, 0.7);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.room-book-form .row label i {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.room-book-form .row .my-btn {
+  margin-top: 30px;
+}
+
+.room-book-form .row .my-btn a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #111;
+  background: #000000;
+  padding: 3px 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.room-book-form .row .my-btn a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: red;
+  height: 100%;
+  z-index: -1;
+  border-radius: 5px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.room-book-form .row .my-btn a:hover::after {
+  width: 100%;
+}
+
+/**
+############ gest-room-section design in css start#########
+**/
+.gest-room-section {
+  padding: 30px 0;
+  background: #e0e0e0;
+}
+
+.gest-room-section h2 {
+  padding: 10px 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.gest-room-section h2::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 200px;
+  height: 2px;
+  background: red;
+}
+
+.gest-room-section .room-section {
+  margin-top: 20px;
+  height: 380px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px 3px #111;
+          box-shadow: 0 0 5px 3px #111;
+}
+
+.gest-room-section .room-section:hover img {
+  height: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.gest-room-section .room-section img {
+  width: 100%;
+  height: 300px;
+}
+
+.gest-room-section .room-section h6 {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.gest-room-section .room-section .price {
+  margin-top: 10px;
+  outline: 3px solid #073817;
+  background: #fff;
+  border-radius: 30px 0 0 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.gest-room-section .room-section .price p {
+  color: #111;
+  margin: 0;
+}
+
+.gest-room-section .room-section .price p span {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: red;
+}
+
+.gest-room-section .room-section p {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.gest-room-section .room-section ul li {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.gest-room-section .room-section ul li i {
+  color: red;
+  margin-right: 5px;
+}
+
+.gest-room-section .room-section .detail-btn {
+  margin-left: 10px;
+}
+
+.gest-room-section .room-section .detail-btn a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #111;
+  background: #000000;
+  padding: 3px 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.gest-room-section .room-section .detail-btn a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: red;
+  height: 100%;
+  z-index: -1;
+  border-radius: 5px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.gest-room-section .room-section .detail-btn a:hover::after {
+  width: 100%;
+}
+
+/**
+################ facilities section design in css start #############
+**/
+.facilities-section {
+  background: #ffe6e6;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.facilities-section h2 {
+  padding: 10px 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.facilities-section h2::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 200px;
+  height: 2px;
+  background: red;
+}
+
+.facilities-section .facilities-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 5px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 0 5px 3px #111;
+          box-shadow: 0 0 5px 3px #111;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.facilities-section .facilities-box .main-box {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.facilities-section .facilities-box .main-box::after {
+  content: '';
+  position: absolute;
+  inset: -10px 50px;
+  background: linear-gradient(350deg, #89ec2b, #ff4027);
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation: animte 4s linear infinite;
+          animation: animte 4s linear infinite;
+}
+
+.facilities-section .facilities-box .main-box:hover::after {
+  inset: -10px 0;
+}
+
+.facilities-section .facilities-box .main-box::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@-webkit-keyframes animte {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animte {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.facilities-section .facilities-box .main-box .sub-main-box {
+  position: absolute;
+  inset: 5px;
+  border: 4px solid #fff;
+  z-index: 3;
+  border-radius: 50%;
+}
+
+.facilities-section .facilities-box .main-box .sub-main-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 50%;
+}
+
+.facilities-section .facilities-box:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.facilities-section .facilities-box h5 {
+  padding: 10px 0;
+  color: #1d0707;
+}
+
+/**
+########## gallery section design in css ##########
+**/
+.gallery-section {
+  padding: 30px 0;
+}
+
+.gallery-section h2 {
+  padding: 10px 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.gallery-section h2::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 200px;
+  height: 2px;
+  background: red;
+}
+
+.gallery-section .gallery a img {
+  float: left;
+  width: 33%;
+  height: 250px;
+  border: 2px solid #fff;
+  -webkit-transition: -webkit-transform .15s ease;
+  transition: -webkit-transform .15s ease;
+  transition: transform .15s ease;
+  transition: transform .15s ease, -webkit-transform .15s ease;
+  position: relative;
+  opacity: .9;
+}
+
+.gallery-section .gallery a img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 9;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 0 0 5px 3px #111;
+          box-shadow: 0 0 5px 3px #111;
+  opacity: 1;
+}
+
+/**
+############# blog section design in css ##############
+**/
+#blog-section {
+  background: #f0f0f0;
+  z-index: -1;
+  padding: 30px 0;
+}
+
+#blog-section h2 {
+  padding: 10px 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#blog-section h2::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 200px;
+  height: 2px;
+  background: red;
+}
+
+#blog-section .textmolial-text {
+  padding-top: 60px;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#blog-section .textmolial-text:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 9999;
+}
+
+#blog-section .textmolial-text .t-img {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#blog-section .textmolial-text .t-img img {
+  width: 80px;
+  height: 90px;
+  border-radius: 50%;
+  border: 8px solid #f0f0f0;
+}
+
+#blog-section .textmolial-text .text-blog {
+  padding: 50px 0 5px;
+  background: white;
+  -webkit-box-shadow: 0 0px 5px 3px #111;
+          box-shadow: 0 0px 5px 3px #111;
+  border-radius: 5px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+#blog-section .textmolial-text .text-blog p {
+  margin-top: 20px;
+}
+
+#blog-section .textmolial-text .text-blog .blockquote {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #111;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul {
+  text-align: center;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li {
+  display: inline-block;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li:hover {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li:nth-child(1) {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li:nth-child(2) {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li:nth-child(3) {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li:nth-child(4) {
+  -webkit-transition-delay: .8s;
+          transition-delay: .8s;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li i {
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li .fa-facebook-f {
+  background: #4267B2;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li .fa-whatsapp {
+  background: #34B7F1;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li .fa-twitter {
+  background: #00acee;
+}
+
+#blog-section .textmolial-text .text-blog .icons1 ul li .fa-linkedin-in {
+  background: #0072b1;
+}
+
+#blog-section .textmolial-text .text-blog:hover .icons1 ul li {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+/** footer section design in css **/
+.footer-section {
+  padding-top: 30px;
+  background: #353b48;
+  color: #fff;
+}
+
+.footer-section p {
+  margin-left: 5px;
+}
+
+.footer-section p a {
+  color: #ddd;
+}
+
+.footer-section .follow a i {
+  padding: 5px 8px;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.footer-section .follow a i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  background: transparent;
+}
+
+.footer-section .follow a .fa-facebook-f {
+  background: #4267B2;
+}
+
+.footer-section .follow a .fa-whatsapp {
+  background: #34B7F1;
+}
+
+.footer-section .follow a .fa-twitter {
+  background: #00acee;
+}
+
+.footer-section .follow a .fa-linkedin-in {
+  background: #0072b1;
+}
+
+.footer-section ul li {
+  padding: 10px 0;
+}
+
+.footer-section ul li p {
+  margin: 0;
+}
+
+/**single room design css**/
+.banar-section {
+  margin: 40px 0;
+}
+
+.banar-section .room-datels h5 {
+  padding: 0 0 10px;
+  color: red;
+  border-bottom: 1px solid #ddd;
+  width: 50%;
+}
+
+.banar-section .room-datels ul li span {
+  font-weight: 500;
+  color: red;
+}
+
+.banar-section .room-datels ul li i {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  color: #55C63E;
+  text-align: center;
+}
+
+.banar-section .room-text-slider img {
+  width: 100%;
+  height: 300px;
+}
+
+.banar-section .boking-single {
+  background: #ddd;
+  padding: 10px 0;
+}
+
+.banar-section .boking-single p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.banar-section .boking-single p span {
+  color: red;
+  font-size: 24px;
+}
+
+.banar-section .boking-single .room-book {
+  margin-top: 20px;
+}
+
+.banar-section .boking-single .room-book a {
+  -webkit-box-shadow: 0 0 5px 1px #000001;
+          box-shadow: 0 0 5px 1px #000001;
+}
+
+.banar-section .boking-single .room-book a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #111;
+  background: #000000;
+  padding: 3px 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.banar-section .boking-single .room-book a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: red;
+  height: 100%;
+  z-index: -1;
+  border-radius: 5px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.banar-section .boking-single .room-book a:hover::after {
+  width: 100%;
+}
+
+/**extra services section css design **/
+.tab-area {
+  margin: 40px 0;
+}
+
+.tab-area h2 {
+  padding: 10px 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.tab-area h2::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 200px;
+  height: 2px;
+  background: red;
+}
+
+.tab-area .tab-nav {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.tab-area .tab-nav li {
+  padding: 8px 10px;
+  cursor: pointer;
+  width: 80%;
+  margin: 5px 0;
+}
+
+.tab-area .tab-nav li i {
+  color: #55C63E;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.tab-area .single-tab {
+  padding: 1rem;
+  display: none;
+}
+
+.tab-area .single-tab:first-child {
+  display: block;
+}
+
+.tab-area .single-tab i {
+  color: red;
+  margin-right: 5px;
+}
+
+.active1 {
+  background: red;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/**contact us section design in css**/
+#contact-us {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 62, 62, 0.9)), to(rgba(80, 62, 62, 0.9))), url(../assets/slider3.webp) no-repeat center;
+  background: linear-gradient(rgba(80, 62, 62, 0.9), rgba(80, 62, 62, 0.9)), url(../assets/slider3.webp) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 40px 0;
+}
+
+#contact-us .main-row {
+  position: relative;
+}
+
+#contact-us .main-row .contact-input {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 5px 3px rgba(255, 231, 123, 0.2);
+          box-shadow: 0 0 5px 3px rgba(255, 231, 123, 0.2);
+}
+
+#contact-us .main-row .input {
+  margin: 10px;
+}
+
+#contact-us .main-row .input input {
+  border: none;
+  border-bottom: 1px solid #111;
+  width: 100%;
+}
+
+#contact-us .main-row label {
+  display: block;
+  margin-top: 15px;
+  color: #000000;
+}
+
+#contact-us .main-row .text-box {
+  margin: 20px 0;
+}
+
+#contact-us .main-row .text-box textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #111;
+}
+
+#contact-us .main-row .my-btn a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #111;
+  background: #000000;
+  padding: 3px 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+#contact-us .main-row .my-btn a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: red;
+  height: 100%;
+  z-index: -1;
+  border-radius: 5px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+#contact-us .main-row .my-btn a:hover::after {
+  width: 100%;
+}
+
+#contact-us .main-row .address-section {
+  position: absolute;
+  top: 77px;
+  left: 0;
+  width: 250px;
+  background: #353b48;
+  color: #ffffff;
+  padding: 20px 10px;
+  border-radius: 5px;
+  outline: 10px solid #fff;
+}
+
+#contact-us .main-row .address-section p {
+  padding: 10px 0;
+}
+
+#contact-us .main-row .address-section p a {
+  color: #fff;
+}
+
+#contact-us .main-row .address-section p i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+#contact-us .main-row .address-section .icons1 ul {
+  text-align: center;
+}
+
+#contact-us .main-row .address-section .icons1 ul li {
+  display: inline-block;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+}
+
+#contact-us .main-row .address-section .icons1 ul li:hover {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#contact-us .main-row .address-section .icons1 ul li:nth-child(1) {
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+#contact-us .main-row .address-section .icons1 ul li:nth-child(2) {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+#contact-us .main-row .address-section .icons1 ul li:nth-child(3) {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+#contact-us .main-row .address-section .icons1 ul li:nth-child(4) {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+#contact-us .main-row .address-section .icons1 ul li i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#contact-us .main-row .address-section .icons1 ul li i:hover {
+  background: transparent;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#contact-us .main-row .address-section .icons1 ul li .fa-facebook-f {
+  background: #4267B2;
+}
+
+#contact-us .main-row .address-section .icons1 ul li .fa-whatsapp {
+  background: #34B7F1;
+}
+
+#contact-us .main-row .address-section .icons1 ul li .fa-twitter {
+  background: #00acee;
+}
+
+#contact-us .main-row .address-section .icons1 ul li .fa-linkedin {
+  background: #0072b1;
+}
+
+#contact-us .main-row .address-section:hover .icons1 ul li {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+/**** services page design in css ****/
+#services-banar {
+  margin-top: 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 62, 62, 0.9)), to(rgba(80, 62, 62, 0.9))), url(../assets/slider3.webp) no-repeat center;
+  background: linear-gradient(rgba(80, 62, 62, 0.9), rgba(80, 62, 62, 0.9)), url(../assets/slider3.webp) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.room-facilities-section {
+  padding: 30px 0;
+}
+
+.room-facilities-section ul li {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.room-facilities-section ul li h5 {
+  margin: 10px 0;
+}
+
+.room-facilities-section ul li p {
+  margin-left: 10px;
+}
+
+.room-facilities-section ul li p i {
+  color: #55C63E;
+  font-size: 14px;
+}
+
+.room-facilities-section ul li i {
+  margin-right: 5px;
+  font-size: 22px;
+  color: red;
+}
+
+.counter-up {
+  padding: 50px 0;
+}
+
+.counter-up .counter-box {
+  margin-right: 20px;
+  text-align: center;
+  -webkit-box-shadow: inset -2px -2px 8px white, inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: inset -2px -2px 8px white, inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 10px;
+  border-bottom: 5px solid red;
+}
+
+.counter-up .counter-box:last-child {
+  margin-right: 0;
+}
+
+.counter-up .counter-box h1 {
+  display: inline-block;
+}
+
+.counter-up .counter-box img {
+  width: 60%;
+  height: 100px;
+  padding: 20px 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.counter-up .counter-box ul li {
+  display: inline-block;
+}
+
+.counter-up .counter-box ul li i {
+  color: #55C63E;
+}
+
+/**lg device responsive in css**/
+@media (max-width: 992px) {
+  .carousel .carousel-controls .carousel-indicators li {
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+  }
+  .carousel .carousel-controls .carousel-control-prev {
+    width: 45px;
+    height: 45px;
+    left: -60px;
+  }
+  .carousel .carousel-controls .carousel-control-prev img {
+    width: 50%;
+  }
+  .carousel .carousel-controls .carousel-control-next {
+    width: 45px;
+    height: 45px;
+    right: -60px;
+  }
+  .carousel .carousel-controls .carousel-control-next img {
+    width: 50%;
+  }
+  .room-book-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  .room-book-form .row .my-btn {
+    margin-top: 40px;
+  }
+  .gest-room-section h2::before {
+    left: 37%;
+    width: 150px;
+  }
+  .facilities-section h2::before {
+    left: 37%;
+    width: 150px;
+  }
+  .gallery-section h2::before {
+    left: 37%;
+    width: 150px;
+  }
+  #blog-section h2::before {
+    left: 37%;
+    width: 150px;
+  }
+  .banar-section .room-datels p {
+    font-size: 14px;
+  }
+  .banar-section .services-room {
+    margin-left: 40px;
+  }
+}
+
+/**lg device responsive in css end * */
+/**md device responsive in css start * */
+@media (max-width: 768px) {
+  .gallery-section .gallery a img {
+    width: 49%;
+  }
+  .banar-section .room-datels p {
+    font-size: 16px;
+  }
+  .banar-section .room-text-slider img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+/**md device responsive in css end * */
+/**sm device responsive in css start * */
+@media (max-width: 576px) {
+  .carousel .carousel-controls .carousel-indicators li {
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+  }
+  .carousel .carousel-controls .carousel-control-prev {
+    width: 30px;
+    height: 30px;
+    left: -40px;
+  }
+  .carousel .carousel-controls .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    right: -40px;
+  }
+  .carousel .carousel-item .text-section h2 {
+    font-size: 22px;
+  }
+  .carousel .carousel-item .text-section p {
+    font-size: 12px;
+  }
+  .gest-room-section h2 {
+    font-size: 28px;
+  }
+  .gest-room-section h2::before {
+    left: 38%;
+    width: 80px;
+  }
+  .facilities-section h2::before {
+    left: 39%;
+    width: 80px;
+  }
+  .gallery-section h2::before {
+    left: 39%;
+    width: 80px;
+  }
+  .gallery-section .gallery a img {
+    height: 200px;
+  }
+  #blog-section h2::before {
+    left: 38%;
+    width: 80px;
+  }
+}
+
+/**lg device responsive in css end * */
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,534 @@
+
+body{
+    scroll-behavior: smooth ;
+}
+.navigation-section{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    margin-bottom: 150px;
+    top:0;
+    left: 0;
+}
+/** slider section design in css start**/
+.carousel{
+    margin-top: 50px;
+    .carousel-controls{
+        position: absolute;
+        left: 50%;
+        bottom:40px;
+        z-index: 10;
+        transform: translateX(-50%);
+
+        .carousel-indicators{
+            position: relative;
+            margin:0;
+
+          
+            li{
+                box-sizing: border-box;
+                height: 70px;
+                width: 60px;
+                border-radius: 50%;
+                transition: .5s;
+                &:nth-child(1){
+                    background:url(../assets/slider1.jpeg) no-repeat;  
+                    background-position: center;
+                    background-size: cover;
+                    border:5px solid #fff;
+
+                }
+                &:nth-child(2){
+                    background: url(../assets/slider2.webp) no-repeat;
+                    margin:5px;
+                    background-position: center;
+                    background-size: cover;
+                    border:5px solid #fff;
+                }
+                &:nth-child(3){
+                    background: url(../assets/slider3.webp) no-repeat;
+                    margin:5px;
+                    background-position: center;
+                    background-size: cover;
+                    border:5px solid #fff;
+
+                }
+               
+            }
+            .active{
+                transform: scale(1.2);
+            }
+        }
+    }
+    .ssslid1{
+        background:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../assets/slider1.jpeg);
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        position: relative;
+        
+        .text-section{
+            @include sliderAnimation;
+        }
+    }
+    .ssslid2{
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/slider2.webp);
+        width: 100%;
+        height: 80vh; 
+        background-size: cover;
+        .text-section{
+            @include sliderAnimation;
+        }
+    }
+    .ssslid3{
+        background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/slider3.webp);
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 80vh; 
+        .text-section{
+            @include sliderAnimation;
+        }
+    }
+}
+.carousel .carousel-controls .carousel-control-prev {
+    background: #fff;
+    z-index: 99;
+    width: 60px;
+    height: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -90px;
+    border-radius: 50%;
+    img{
+        width: 80%;
+    }
+    
+}
+.carousel .carousel-controls .carousel-control-next {
+    background: #fff;
+    z-index: 99;
+    width: 60px;
+    height: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -90px;
+    border-radius: 50%;
+    img{
+        width: 80%;
+    }
+}
+
+/**
+################# room book section form design in css ####################
+**/
+.room-book-form{
+    margin-top: 60px;
+    background:linear-gradient(rgba(80, 62, 62, 0.9), rgba(80, 62, 62, 0.9)), url(../assets/slider3.webp) no-repeat center;
+    background-size: cover;
+    padding:20px 0;
+    color:#fff;
+    .row{
+
+        input{
+            display: block;
+            width: 100%;
+            border:1px solid $black;
+            background: transparent;
+            color:#fff;
+            padding:5px;
+            border-radius: 5px;
+            &::placeholder{
+                color:#fff;
+                font-size: 12px;
+            }
+
+        }
+        #selec{
+            width: 100%;
+            border:1px solid $black;
+            background: rgba(80, 62, 62, 0.7);
+            color:#fff;
+            padding:5px;
+            border-radius: 5px; 
+            
+        }
+        label{
+            i{
+                display: inline-block;
+                margin-left: 8px;
+            }
+        }
+        .my-btn{
+            margin-top: 30px;
+            @include my-btn;
+        }
+    }
+}
+
+/**
+############ gest-room-section design in css start#########
+**/
+
+.gest-room-section{
+    padding:30px 0;
+    background:rgb(224, 224, 224);
+    
+
+    
+    h2{
+        @include heading;
+        
+    }
+    .room-section{
+        margin-top:20px;
+        height: 380px;
+        overflow: hidden;
+        box-shadow: 0 0 5px 3px #111;
+        
+        &:hover img{
+            height:0;
+            transition: .5s;
+            
+        }
+        img{
+            width: 100%;
+            height: 300px;
+        }
+        h6{
+            padding-top:20px;
+            padding-left: 10px;
+        }
+        .price{
+            margin-top: 10px;
+            outline: 3px solid #073817;
+            background: #fff;
+
+            border-radius:30px 0 0 30px ;
+            padding:5px 10px;
+            cursor: pointer;
+            p{
+                color:#111;
+                margin:0;
+                span{
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                    color:$secondary-color;
+                }
+            }
+        }
+        p{
+            font-size: 14px;
+            padding:0 10px;
+        }
+        ul{
+            li{
+                font-size: 14px;
+                padding-left:10px;
+                i{
+                    color:$secondary-color;
+                    margin-right: 5px;
+                }
+                
+            }
+        }
+        .detail-btn{
+            margin-left: 10px;
+            @include my-btn;
+        }
+    }
+}
+
+/**
+################ facilities section design in css start #############
+**/
+.facilities-section{
+    background:rgb(255, 230, 230);
+    text-align: center;
+    padding:30px 0;
+
+    h2{
+        @include heading;
+        
+    }
+    .facilities-box{
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 10px 5px;
+        margin-top: 20px;
+        box-shadow: 0 0 5px 3px #111;
+        transition: .5s;
+        .main-box{
+            width: 150px;
+            height: 150px;
+            background:#fff;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            margin:10px auto;
+            &::after{
+                content: '';
+                position: absolute;
+                inset: -10px 50px;
+                background:linear-gradient(350deg, #89ec2b, rgb(255, 64, 39));
+                transition: .5s;
+                animation: animte 4s linear infinite;
+            }
+            &:hover::after{
+                inset: -10px 0; 
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                inset: 6px;
+                background:#fff;
+                border-radius: 50%;
+                z-index: 1;
+            }
+            @keyframes animte {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+        
+            .sub-main-box{
+                position: absolute;
+                inset:5px;
+                border:4px solid #fff;
+                z-index: 3;
+                border-radius: 50%;
+                img{
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transition: .5s;
+                    border-radius: 50%;
+                }
+                
+        
+            }
+        }
+        &:hover{
+            transform: scale(1.04);
+        }
+        h5{
+            padding:10px 0;
+            color:rgb(29, 7, 7);
+        }
+    }
+   
+}
+
+/**
+########## gallery section design in css ##########
+**/
+.gallery-section{
+    padding:30px 0;
+    
+    h2{
+        @include heading;
+        
+    }
+    .gallery{
+        a {
+            img {
+                float: left;
+                width: 33%;
+                height: 250px;
+                border: 2px solid #fff;
+                -webkit-transition: -webkit-transform .15s ease;
+                -moz-transition: -moz-transform .15s ease;
+                -o-transition: -o-transform .15s ease;
+                -ms-transition: -ms-transform .15s ease;
+                transition: transform .15s ease;
+                position: relative;
+                opacity: .9;
+                
+                &:hover{
+                    transform: scale(1.05);
+                    z-index: 9;
+                    transition: .5s;
+                    box-shadow: 0 0 5px 3px #111;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+/**
+############# blog section design in css ##############
+**/
+
+
+#blog-section{
+    background:rgb(240, 240, 240);
+    z-index: -1;
+    padding:30px 0;
+    h2{
+        @include heading;
+        
+    }
+
+    .textmolial-text{
+        padding-top: 60px;
+        position: relative;
+        transition: .5s;
+            &:hover{
+                transform: scale(1.05);
+                z-index: 9999;
+            }
+       
+        
+    
+        .t-img{
+            position: absolute;
+            top:10px;
+            left:50%;
+            transform: translateX(-50%);
+
+
+          img{
+            width: 80px;
+            height: 90px;
+            border-radius: 50%;
+            border:8px solid rgb(240, 240, 240);
+          }
+        }
+        .text-blog{
+            padding:50px 0 5px;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 0px 5px 3px #111;
+            border-radius: 5px;
+            color:#111;
+            margin-bottom: 10px;
+            p{
+               margin-top: 20px;
+            }
+            .blockquote {
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                text-align: center;
+                color:#111;
+            }
+
+
+            .icons1{
+
+                ul{
+                    text-align: center;
+                    li{
+                        display: inline-block;
+                        transform: translateY(30px);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .8s ease-in-out;
+                       
+        
+                        &:hover{
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(0);
+                        }
+        
+                        &:nth-child(1){
+                            transition-delay: .2s;
+                        }
+                        &:nth-child(2){
+                            transition-delay: .4s;
+                        }
+                        &:nth-child(3){
+                            transition-delay: .6s;
+                        }
+                        &:nth-child(4){
+                            transition-delay: .8s;
+                        }
+                        i{
+                            color:#fff;
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                        }
+                        .fa-facebook-f{
+                            background:#4267B2;
+                        }
+                        .fa-whatsapp{
+                            background:#34B7F1;
+                        }
+                        .fa-twitter{
+                            background:#00acee ;
+                        }
+                        .fa-linkedin-in{
+                            background: #0072b1 ;
+                        }
+                    }
+                }
+            }
+            &:hover .icons1 ul li{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+              
+        }
+        
+    }
+    
+}
+
+/** footer section design in css **/
+.footer-section{
+    padding-top: 30px;
+    background:#353b48;
+    color:#fff;
+    p{
+        margin-left: 5px;
+        a{
+            color:#ddd;
+        }
+        
+    }
+    .follow{
+        a{
+           
+            i{
+                padding:5px 8px;
+                color:#fff;
+                border-radius: 10px;
+                transition: .5s;
+                &:hover{
+                    transform: rotate(360deg);
+                    background:transparent;
+                }
+               
+            }
+            .fa-facebook-f{
+                background:#4267B2;
+            }
+            .fa-whatsapp{
+                background:#34B7F1;
+            }
+            .fa-twitter{
+                background:#00acee ;
+            }
+            .fa-linkedin-in{
+                background: #0072b1 ;
+            }
+        }
+    }
+
+    ul{
+        li{
+            padding: 10px 0;
+            p{
+                margin:0;
+            }
+        }
+    }
+}

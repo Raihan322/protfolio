@@ -1,0 +1,125 @@
+
+/**lg device responsive in css**/
+@media (max-width:992px) {
+    .carousel .carousel-controls .carousel-indicators li{
+        border: 2px solid #fff;
+        width: 40px;
+        height: 40px;
+    }
+    .carousel .carousel-controls .carousel-control-prev {
+        width: 45px;
+        height: 45px;
+        left: -60px;
+    }
+    .carousel .carousel-controls .carousel-control-prev img {
+        width: 50%;
+    }
+    .carousel .carousel-controls .carousel-control-next {
+        width: 45px;
+        height: 45px;
+        right: -60px;
+    }
+    .carousel .carousel-controls .carousel-control-next img {
+        width: 50%;
+    }
+    .room-book-form label{
+        display: block;
+        margin-top: 10px;
+    }
+    .room-book-form .row .my-btn {
+        margin-top: 40px;
+    }
+
+    .gest-room-section h2::before {
+        left: 37%;
+        width: 150px;
+    }
+    .facilities-section h2::before {
+        left: 37%;
+        width: 150px;
+    }
+    .gallery-section h2::before {
+        left: 37%;
+        width: 150px;
+    }
+    #blog-section h2::before {
+        left: 37%;
+        width: 150px;
+    }
+    .banar-section .room-datels p {
+        font-size: 14px;
+    }
+    .banar-section .services-room {
+        margin-left: 40px;
+    }
+}
+/**lg device responsive in css end * */
+
+/**md device responsive in css start * */
+@media (max-width:768px) {
+    .gallery-section .gallery a img {
+        width: 49%;
+        
+    }
+    .banar-section .room-datels p {
+        font-size: 16px;
+    }
+    .banar-section .room-text-slider img{
+        height: 200px;
+        width: 100%;
+    }
+}
+/**md device responsive in css end * */
+
+
+/**sm device responsive in css start * */
+@media (max-width:576px) {
+    .carousel .carousel-controls .carousel-indicators li{
+        border: 2px solid #fff;
+        width: 30px;
+        height: 30px;
+    }
+    .carousel .carousel-controls .carousel-control-prev {
+        width: 30px;
+        height: 30px;
+        left: -40px;
+    }
+    .carousel .carousel-controls .carousel-control-next {
+        width: 30px;
+        height: 30px;
+        right: -40px;
+    }
+    .carousel .carousel-item .text-section h2 {
+        font-size: 22px;
+    }
+    .carousel .carousel-item .text-section p {
+        font-size: 12px;
+    }
+    .gest-room-section h2{
+        font-size: 28px;
+    }
+    .gest-room-section h2::before {
+        left: 38%;
+        width: 80px;
+    }
+    .facilities-section h2::before  {
+        left: 39%;
+        width: 80px;
+    }
+    .gallery-section h2::before {
+        left: 39%;
+        width: 80px;
+    }
+    .gallery-section .gallery a img {
+        height: 200px;
+        
+    }
+    #blog-section h2::before {
+        left: 38%;
+        width: 80px;
+    }
+    
+     
+}
+
+/**lg device responsive in css end * */

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="WhizDevs" content="Be a Professional Front-end web developer in 2022"> 
+    <meta name="author" content="Eleas Kanchon">
+	
+    <title>Hotel design</title> 
+	
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/simple-lightbox.css" />
+
+
+
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/navber.css" />
+    <link rel="stylesheet" href="scss/styles.css" />
+</head>
+
+<body>
+    <!--top up design in html-->
+    <a id="button"><i class="fa fa-angle-up"></i></a>
+    <!--header top section design in html-->
+
+     <!--nav bar section design in html start-->
+     <div class="navigation-section">
+      <div class="container my-menu-con">
+          <div class="logo"><a href="#"><img src="assets/logo.webp" alt="LOgo"></a></div>
+          <input type="radio" name="slide" id="menu-btn">
+          <input type="radio" name="slide" id="cancle-btn">
+          <ul class="my-nav list-unstyled">
+              <label for="cancle-btn" class="btn cancle-btn"> <i class="fa fa-times"></i></label>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li>
+                  <a href="#" class="desktop-item">Services <i class="fa fa-angle-down"></i></a>
+                  <input type="checkbox" id="showMega">
+                  <label for="showMega" class="mobil-item">Mega Services<i class="fa fa-angle-down"></i></label>
+                  <div class="mega-drop-down">
+                  <div class="container my-cont">
+                      <div class="row d-block">
+                         <a href="#"><img src="assets/logo.webp" alt="Con"></a>
+                      </div>
+                      <div class="row d-block">
+                          <h4>THis is design </h4>
+
+                          <ul class="mega-link list-unstyled">
+                              <li><a href="services.html">service 1</a></li>
+                              <li><a href="services.html">service 2</a></li>
+                              <li><a href="services.html">service 3</a></li>
+                              <li><a href="services.html">service 4</a></li>
+                              <li><a href="services.html">service 5</a></li>
+                          </ul>
+                      </div>
+                      <div class="row d-block">
+                          <h4>THis is design </h4>
+
+                          <ul class="mega-link list-unstyled">
+                              <li><a href="services.html">service 1</a></li>
+                              <li><a href="services.html">service 2</a></li>
+                              <li><a href="services.html">service 3</a></li>
+                              <li><a href="services.html">service 4</a></li>
+                              <li><a href="services.html">service 5</a></li>
+                          </ul>
+                      </div>
+                      <div class="row d-block">
+                          <h4 >THis is design</h4>
+
+                          <ul class="mega-link list-unstyled">
+                              <li><a href="services.html">service 1</a></li>
+                              <li><a href="services.html">service 2</a></li>
+                              <li><a href="services.html">service 3</a></li>
+                              <li><a href="services.html">service 4</a></li>
+                              <li><a href="services.html">service 5</a></li>
+                          </ul>
+                      </div>
+                   </div>
+                  </div>
+              
+              </li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#contact-us">contact</a></li>
+          </ul>
+          <label for="menu-btn" class="btn bars-btn"><i class="fa fa-bars"></i></label>
+      </div>
+      
+  </div>
+
+  <!--navbar section design in html end-->
+  
+     <!--form section design in html start-->
+     <form action="" method="" class="room-book-form">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-sm-4 col-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Please enter your E-mail" id="email">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <label for="selec">Room Category</label>
+                    <select name="" id="selec">
+                        <option selected disabled>Category</option>
+                        <option value="bed">Bed & Table </option>
+                        <option value="double">catagory 1</option>
+                        <option value="family">catagory 1</option>
+                        <option value="family">catagory 1</option>
+                        <option value="family">catagory 1</option>
+                        <option value="family">catagory 1</option>
+                    </select>
+                </div>
+                
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <label for="in">Check-in<i class="fa fa-info"></i></label>
+                    <input type="date" placeholder="Check-in" id="in">
+                </div>
+
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <label for="out">Check-out<i class="fa fa-info"></i></label>
+                    <input type="date" placeholder="Check-out" id="out">
+                </div>
+
+                <div class="col-lg-1 col-sm-4 col-6">
+                    <label for="number">Guests</label>
+                    <input type="number" placeholder="1" id="number">
+                </div>
+               
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <div class="my-btn">
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </form>
+    <!--form section design in html end-->
+
+    <!--banar section desing in html start-->
+    <section class="banar-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="room-text-slider">
+                <img src="assets/sin1.webp" alt="room">
+                <img src="assets/sin2.jpg" alt="room">
+                <img src="assets/sin3.webp" alt="room">
+            </div>
+            <div class="d-flex justify-content-around boking-single">
+                <p><span>$25</span><br>Par Day</p>
+                <div class="room-book">
+                    <a href="#">Room book</a>
+                </div>
+
+            </div>
+            
+          </div>
+          <div class="col-md-6">
+            <div class="room-datels">
+                <h5>Single room details</h5>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-bed"></i>No Of Bed: <span>1 Bed In Room</span></li>
+                  <li><i class="fas fa-id-badge"></i>No Of People: <span>2 People In Room</span></li>
+                  <li><i class="fab fa-accusoft"></i>Room Size: <span>1200 SQF</span></li>
+                  <li><i class="fas fa-spinner"></i>AC/Non AC: <span>Split AC</span></li>
+                </ul>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. <a href="#">Read more</a></p>
+            </div>
+          </div> 
+        </div>
+      </div>   
+    </section>
+
+    <!--single room services section in html-->
+    <div class="tab-area">
+        <div class="container">
+            <h2 class="text-center">Extra Facilities</h2>
+            <div class="row">
+                <div class="col-4">
+                    <!-- tab nav  -->
+                    <ul class="tab-nav">
+                        <li class="active1"><i class="fas fa-utensils"></i>Food & Drink</li>
+                        <li><i class="fas fa-smile"></i>Entertainment and family services</li>
+                        <li><i class="fas fa-lock"></i>Safety & security</li>
+                        <li><i class="fas fa-broom"></i>Cleaning services</li>
+                        <li><i class="fa fa-theater-masks"></i>Languages spoken</li>
+                        
+                    </ul>                
+                </div>
+                <div class="col-8">
+                    <!-- tab body  -->
+                <div class="tab-body">
+                <!-- single tab  1-->
+                <div class="single-tab">
+                    <h4>Food & Drink</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority .suffered alteration in some form, by injected have suffered alteration in some form, by injected humour, or randomised words which don't</p>
+                    <p><i class="fas fa-check"></i>Lorem ipsum dolor sit</p>
+                    <p><i class="fas fa-check"></i>Adipisci quisquam temporibus</p>
+                    <p><i class="fas fa-check"></i>have suffered alteration</p>  
+                    <p><i class="fas fa-check"></i>discovered the undoubtable</p><p><i class="fas fa-check"></i>Adipisci quisquam temporibus</p>
+                </div>
+                <!-- single tab 2 -->
+                <div class="single-tab">
+                    <h4>Entertainment and family services</h4>
+                    <p>Tab Tow Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequuntur iure? Adipisci quisquam temporibus facilis earum reprehenderit molestiae incidunt.</p>
+                    <p><i class="fas fa-check"></i>Lorem ipsum dolor sit.</p>
+                    <p><i class="fas fa-check"></i>Adipisci quisquam temporibus</p>
+                    <p><i class="fas fa-check"></i>discovered the undoubtable</p>  
+                    <p><i class="fas fa-check"></i>have suffered alteration</p>
+                </div>
+                <!-- single tab 3 -->
+                <div class="single-tab">
+                    <h4>Safety & security</h4>
+                    <p>Tab Three Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequuntur iure? Adipisci quisquam temporibus facilis earum reprehenderit molestiae incidunt.suffered alteration in some form, by injected humour, or randomised</p>
+                    <p><i class="fas fa-check"></i>Lorem ipsum dolor sit.</p>
+                    <p><i class="fas fa-check"></i>Adipisci quisquam temporibus</p>
+                    <p><i class="fas fa-check"></i>discovered the undoubtable</p>  
+                </div>
+                <!-- single tab 4 -->
+                <div class="single-tab">
+                    <h4>Cleaning services</h4>
+                    <p>Tab Four Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequuntur iure? Adipisci quisquam temporibus facilis earum reprehenderit molestiae incidunt.</p>
+                    <p><i class="fas fa-check"></i>Lorem ipsum dolor sit.</p>
+                    <p><i class="fas fa-check"></i>Adipisci quisquam temporibus</p>
+                    <p><i class="fas fa-check"></i>discovered the undoubtable</p> 
+                    <p><i class="fas fa-check"></i>Adipisci quisquam temporibus</p> 
+                </div>
+                <!-- single tab 5 -->
+                <div class="single-tab">
+                    <h4>Languages spoken</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available,suffered alteration in some form, by injected humour, or randomised but the majority have suffered alteration in some form, by injected humour, or randomised words which don't</p>
+                    <p><i class="fas fa-check"></i>English</p>
+                    <p><i class="fas fa-check"></i>Bangla</p>
+                    <p><i class="fas fa-check"></i>Arabic</p>
+                    <p><i class="fas fa-check"></i>Spanish</p>
+                    <p><i class="fas fa-check"></i>Italian</p>
+                    <p><i class="fas fa-check"></i>French</p>
+                    <p><i class="fas fa-check"></i>Russian</p>
+                </div>
+   
+               </div>
+            </div>
+       
+         
+          </div>
+        </div>
+    </div>
+
+    <!--our gallery section design in html start-->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="text-center">Our Hotel Gallery</h2>
+            <div class="row">
+                <div class="gallery">
+                    <a href="assets/full/slick1.webp" class="big"><img src="assets/thumb/slick1.webp" alt="" title="Beautiful Image" /></a>
+    
+                    <a href="assets/full/slick2.webp"><img src="assets/thumb/slick2.webp" alt="" title=""/></a>
+    
+                    <a href="assets/full/slick3.jpeg"><img src="assets/thumb/slick3.jpeg" alt="" title="Beautiful Image"/></a>
+    
+                    <a href="assets/full/slick4.webp"><img src="assets/thumb/slick4.webp" alt="" title=""/></a>
+    
+                    <a href="assets/full/slick5.webp"><img src="assets/thumb/slick5.webp" alt="" title=""/></a>
+    
+                    <a href="assets/full/slick6.webp"><img src="assets/thumb/slick6.webp" alt="" title=""/></a>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--our gallery section design in html end-->
+
+     <!--blog section design in html-->
+     <section id="blog-section">
+        <div class="container">
+          <h2 class="text-center pb-2">Some Opinions Of Guests</h2>
+          <div class="test-slider-slick row">
+            <div class="textmolial-text">
+              <div class="t-img">
+                <img src="assets/person.jpg" alt="MY img">
+              </div>
+              <div class="text-blog">
+                <blockquote class="blockquote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet.</p>
+                  <p class="blockquote-footer text-center">Md Raihan Mia</p>
+                  <p>Single Room, Form Bangladesh</p>
+
+                </blockquote>
+                <div class="icons1">
+                  <ul class="list-unstyled">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="textmolial-text">
+              <div class="t-img">
+                <img src="assets/person.jpg" alt="MY img">
+              </div>
+              <div class="text-blog">
+                <blockquote class="blockquote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet.</p>
+                  <p class="blockquote-footer text-center">Md Raihan Mia</p>
+                  <p>Single Room, Form Bangladesh</p>
+                </blockquote>
+                <div class="icons1">
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></i></a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="textmolial-text">
+              <div class="t-img">
+                <img src="assets/person.jpg" alt="MY img">
+              </div>
+              <div class="text-blog">
+                <blockquote class="blockquote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet.</p>
+                  <p class="blockquote-footer text-center">Md Raihan Mia</p>
+                  <p>Single Room, Form Bangladesh</p>
+                </blockquote>
+                <div class="icons1">
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></i></a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="textmolial-text">
+              <div class="t-img">
+                <img src="assets/person.jpg" alt="MY img">
+              </div>
+              <div class="text-blog">
+                <blockquote class="blockquote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet.</p>
+                  <p class="blockquote-footer text-center">Md Raihan Mia</p>
+                  <p>Single Room, Form Bangladesh</p>
+                </blockquote>
+                <div class="icons1">
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></i></a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="textmolial-text">
+              <div class="t-img">
+                <img src="assets/person.jpg" alt="MY img">
+              </div>
+              <div class="text-blog">
+                <blockquote class="blockquote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet.</p>
+                  <p class="blockquote-footer text-center">Md Raihan Mia</p>
+                  <p>Single Room, Form Bangladesh</p>
+                </blockquote>
+                <div class="icons1">
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></i></a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="textmolial-text">
+              <div class="t-img">
+                <img src="assets/person.jpg" alt="MY img">
+              </div>
+              <div class="text-blog">
+                <blockquote class="blockquote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet.</p>
+                  <p class="blockquote-footer text-center">Md Raihan Mia</p>
+                  <p>Single Room, Form Bangladesh</p>
+                </blockquote>
+                <div class="icons1">
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></i></a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+    
+        </div>
+          
+        </div>
+    </section>
+ 
+    <!--blog section design in html end-->
+
+  <!--contact us section design in html-->
+  <section id="contact-us">
+    <div class="container">
+      <div class="row main-row">
+        <div class="col-md-2 col-sm-2">
+        </div>
+        <div class="col-md-10 col-sm-10">
+
+          <div class="row contact-input py-4 rounded">
+            <div class="col-md-2 col-sm-2"></div>
+            <div class="col-md-10 col-sm-10">
+              <h2>Send A Massage</h2>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="input">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" required> 
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                  <div class="input">
+                    <label for="l-name">Last Name</label>
+                    <input type="text" id="l-name" required> 
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                  <div class="input">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required> 
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="input">
+                    <label for="number">Mobail Number</label>
+                    <input type="number" id="number" required> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12">
+                <div class="text-box">
+                  <label for="text-area">Write your massage here..</label>
+                  <h3>Hi Everyone</h3>
+                  <h4>Yes, can I help you</h4>
+            
+                  <textarea name="" id="text-area" rows="6"></textarea>
+                </div>
+              </div>
+              <div class=" ml-3">
+                <div class="my-btn">
+                    <a href="#">Send</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="address-section">
+          <p><i class="fa fa-map-marker"></i><a href="https://goo.gl/maps/3zdn5Q3iVGfKxqWt5">WhizDevs, VIP road, Rangpur, Bangladesh</a></p>
+          <p><i class="fa fa-envelope"></i><a href="mailto:mdraihanmia200227@gmail.com">mdraihanmia200227@gmail.com</a></p>
+          <p><i class="fa fa-envelope"></i><a href="mailto:mraihanmia50@gmail.com">mraihanmia50@gmail.com</a></p>
+          <p><i class="fa fa-phone"></i><a href="tel:+8801744403906">+8801744403906</a></p>
+          <p><i class="fa fa-phone"></i><a href="tel:+8801742614693">+8801742614693</a></p>
+          <div class="icons1">
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <!--contact section design in html-->
+
+    <!--footer section design in html-->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <h5>About US</h5>
+                    <p>Pariatur cum itaque officiis beatae aliquam unde neque sit enim repudiandae</p>
+                    
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5>Provident nesciunt</h5>
+                    <p>Pariatur cum itaque officiis beatae aliquam unde neque sit enim repudiandae</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, expedita.</p>
+                    
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>this is a video post</p>
+                            <p>May 20, 2022</p>
+                        </li>
+                        <li>
+                            <p>Images post</p>
+                            <p>May 20, 2022</p>
+                        </li>
+                        <li>
+                            <p>Audio post</p>
+                            <p>May 20, 2022</p>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5>address</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> <a href="#">VIP Road, College Para, Rangpur</a></p>                  
+                    <p><i class="fas fa-envelope"></i> <a href="mailto://mraihanmia50@gmail.com">mraihanmia50@gmail.com</a></p>
+
+                    <p><i class="fas fa-phone"></i><a href="tel:01744403906">+8801744403906</a></p>
+                    <p class="follow"><span>Follow-</span> 
+                        <a href="#"><span><i class="fab fa-facebook-f"></i></span></a> 
+                        <a href="#"><span><i class="fab fa-whatsapp"></i></span> </a>
+                        <a href="#"><span><i class="fab fa-twitter"></i></span></a>
+                        <a href="#"> <span><i class="fab fa-linkedin-in"></i></span></a>
+
+                    </p>
+                    <p><i class="fas fa-browser"></i><a href="#">www.5starhotel.com</a></p>
+                   
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+ 
+
+
+
+
+
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/simple-lightbox.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/functions.js"></script>
+
+</body>
+
+</html>
